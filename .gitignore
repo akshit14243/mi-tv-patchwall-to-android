@@ -1,0 +1,14 @@
+# Large Firmware Files (exceeds GitHub 100MB limit)
+*.zip
+*.img
+*.dat
+*.br
+*.bin
+update-magnolia_p_rel_*/
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+*.tmp
+.vscode/
+.idea/
