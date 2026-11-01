@@ -10,6 +10,9 @@ This document contains reverse-engineered technical specifications and metadata 
   * Xiaomi Mi TV 4A 32-inch (L32M5-AL / L32M5-AI)
   * Xiaomi Mi TV 4A 43-inch (L43M5-AL / L43M5-AI)
   * Related regional PatchWall variants (Indian / Global 2018-2019 editions)
+* **Incompatible Board Variants (DO NOT FLASH):**
+  * `dangal` / `dangalUHD` (Mi TV 4A Pro / 4C Pro series)
+  * `pulpfiction` / `matrix` (Mi TV 4 / 4 Pro series)
 * **Processor Architecture:** Amlogic T962X / T962E Cortex-A53 Quad-Core
 * **Original OS:** Android 6.0.1 Marshmallow (PatchWall 1.x / 2.x)
 * **Upgraded OS:** **Android TV 9.0 Pie (SDK 28)**

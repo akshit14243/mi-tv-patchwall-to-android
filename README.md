@@ -54,6 +54,32 @@ This repository includes pre-built template files as well as automated PowerShel
 
 ## 🚀 Step-by-Step Installation Guide
 
+### ⚠️ Step 0: CRITICAL — Hardware Verification (Magnolia vs. Dangal)
+
+> [!CAUTION]
+> **DO NOT SKIP THIS STEP!**
+> Xiaomi manufactured two outwardly identical TV models with completely different internal hardware mainboards:
+> 1. **`magnolia`**: Xiaomi Mi TV 4A (Standard 32" / 43") — **Compatible with this guide!**
+> 2. **`dangal` / `dangalUHD`**: Xiaomi Mi TV 4A Pro / 4C Pro — **INCOMPATIBLE!**
+>
+> If you flash this `magnolia` firmware on a `dangal` board, you will cause a permanent black screen or hard-brick your display panel!
+
+#### How to Check via AIDA64:
+Because old PatchWall lacks the official Google Play Store, verify your board before doing anything:
+1. **Install AIDA64:**
+   * **Method A (Recommended via Aptoide):** Download the **Aptoide TV** APK on your computer, copy it to a USB drive, install it via PatchWall's built-in file manager, and install **AIDA64**.
+   * **Method B (Direct Sideload):** Download the official **AIDA64 for Android APK** on your PC, copy it to a USB flash drive, open PatchWall's file/media manager, and install the APK directly.
+2. **Open AIDA64 > Navigate to "System":**
+   * Check the **Device** and **Board** rows.
+   * ✅ If it displays **`magnolia`**, you are **100% safe to proceed**.
+   * 🛑 If it displays **`dangal`** (or `dangalUHD`), **DO NOT FLASH THIS PACKAGE**.
+
+<p align="center">
+  <img src="assets/aida64_hardware_check.jpg" alt="AIDA64 Hardware Verification - Check Device magnolia vs dangal" width="700"/>
+</p>
+
+---
+
 ### Step 1: Format the USB Drive
 1. Insert your USB flash drive into your computer.
 2. Format the drive as **FAT32** (Allocation unit size: Default).
@@ -131,6 +157,7 @@ While keeping both buttons firmly pressed, plug the power cable back into the wa
 
 ```text
 ├── assets/
+│   ├── aida64_hardware_check.jpg   # AIDA64 board verification (magnolia vs dangal)
 │   ├── remote_recovery_combo.jpg    # Visual guide for remote button combo
 │   └── tv_power_recovery.jpg        # Visual guide for power trigger
 ├── docs/

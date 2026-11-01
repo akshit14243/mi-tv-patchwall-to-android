@@ -15,11 +15,12 @@ Encountering an issue while upgrading your Xiaomi Mi TV? Follow the tested solut
 ---
 
 ### 2. "Signature Verification Failed" or "Installation Aborted"
-* **Cause:** Corrupted download or mismatched board codename.
+* **Cause:** Corrupted download or mismatched board codename (e.g. attempting to flash a `dangal` board with a `magnolia` package).
 * **Fix:**
-  1. Verify your TV model in **Settings > About TV > Model**. Confirm it is a **Mi TV 4A 32" or 43" (Magnolia)**.
-  2. Check that the ZIP file size is exactly `795,256,952 bytes` (~758 MB). If it is smaller, redownload the complete package.
-  3. Do **not** extract or alter files inside the ZIP archive.
+  1. **Check Hardware Board:** Sideload **AIDA64** via Aptoide TV or USB. Navigate to **System**. Verify that **Device** and **Board** are strictly `magnolia`.
+  2. If AIDA64 reports `dangal` or `dangalUHD` (common on Mi TV 4A Pro / 4C Pro models), **STOP IMMEDIATELY**. Flashing this package will brick your display.
+  3. Verify that the ZIP file size is exactly `795,256,952 bytes` (~758 MB). If it is smaller, redownload the complete package.
+  4. Do **not** extract or alter files inside the ZIP archive.
 
 ---
 
