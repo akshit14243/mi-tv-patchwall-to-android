@@ -10,6 +10,10 @@ This document contains reverse-engineered technical specifications and metadata 
   * Xiaomi Mi TV 4A 32-inch (L32M5-AL / L32M5-AI)
   * Xiaomi Mi TV 4A 43-inch (L43M5-AL / L43M5-AI)
   * Related regional PatchWall variants (Indian / Global 2018-2019 editions)
+* **Rear Panel Label Identification:**
+  * Model: `L32M5-AI` / `L32M5-AL`
+  * Serial prefix: `16938`, `19764`, `16940`, `19766`
+  * Reference photo: `assets/back_panel_model_label.jpg`
 * **Incompatible Board Variants (DO NOT FLASH):**
   * `dangal` / `dangalUHD` (Mi TV 4A Pro / 4C Pro series)
   * `pulpfiction` / `matrix` (Mi TV 4 / 4 Pro series)

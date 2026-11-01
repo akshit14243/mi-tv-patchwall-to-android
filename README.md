@@ -17,8 +17,18 @@ This update specifically targets the Xiaomi hardware board codename **`magnolia`
 * **Xiaomi Mi TV 4A 43-inch** (`L43M5-AL` / `L43M5-AI`)
 * Select regional Mi TV models running base firmware build versions: `16938`, `19764`, `16940`, `19766`.
 
+### 🏷️ How to Identify via the Rear Label Sticker
+
+You can easily identify your TV hardware before even powering it on by checking the manufacturer sticker on the back casing:
+* **Model Number:** Look for **`MODEL: L32M5-AI`** or **`L32M5-AL`** (32-inch) / **`L43M5-AI`** or **`L43M5-AL`** (43-inch).
+* **Serial Number Prefix:** Notice the number preceding the slash on the barcode sticker (e.g. **`SN 16938/280324540`**). Numbers like **`16938`**, **`19764`**, **`16940`**, or **`19766`** directly correspond to the technician spreadsheet for supported Magnolia units!
+
+<p align="center">
+  <img src="assets/back_panel_model_label.jpg" alt="Xiaomi Mi TV 4A L32M5-AI Rear Panel Label" width="450"/>
+</p>
+
 > [!NOTE]
-> Check your TV under **Settings > About TV > Model**. Confirm your device is a Mi TV 4A (32" or 43").
+> You can also verify on-screen under **Settings > About TV > Model**. Confirm your device is a Mi TV 4A (32" or 43").
 
 ---
 
@@ -158,6 +168,7 @@ While keeping both buttons firmly pressed, plug the power cable back into the wa
 ```text
 ├── assets/
 │   ├── aida64_hardware_check.jpg   # AIDA64 board verification (magnolia vs dangal)
+│   ├── back_panel_model_label.jpg   # Rear rating label (Model L32M5-AI & SN 16938)
 │   ├── remote_recovery_combo.jpg    # Visual guide for remote button combo
 │   └── tv_power_recovery.jpg        # Visual guide for power trigger
 ├── docs/
