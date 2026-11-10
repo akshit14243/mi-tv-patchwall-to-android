@@ -41,6 +41,7 @@ pre-device=magnolia
 ## File Verification & Integrity
 * **File Name:** `update-magnolia_p_rel_190830r2854-3698-user.zip`
 * **File Size:** `795,256,952 bytes` (~758.4 MB)
+* **SHA-256 Checksum:** `11a1da0015bcb2baa5dc29be3ed07f5e0b9e32317a9a2b7d07360fe8dce07c8b`
 * **Official Release Keys:** Signed with official `Xiaomi release-keys` (validates against stock recovery cryptographic check).
 
 ---
