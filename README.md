@@ -53,12 +53,10 @@ This repository includes the pre-built template file as well as automated PowerS
 
 1. **USB Flash Drive:**
    * Capacity: 8 GB or 16 GB recommended (must be FAT32 formatted, MBR partition).
-2. **Firmware Package:**
-   * Download directly from [GitHub Releases: v1.0.0](https://github.com/akshit14243/mi-tv-patchwall-to-android/releases/tag/v1.0.0)
-   * File: `update-magnolia_p_rel_190830r2854-3698-user.zip` (Size: ~758 MB / build `3698`).
-3. **Recovery Trigger File (Included in this repo):**
-   * `xiaomi_update-magnolia`
-4. **Mi TV Remote** (with working batteries).
+2. **Download Both Files from [GitHub Releases: v1.0.0](https://github.com/akshit14243/mi-tv-patchwall-to-android/releases/tag/v1.0.0):**
+   * 📦 **[`update-magnolia_p_rel_190830r2854-3698-user.zip`](https://github.com/akshit14243/mi-tv-patchwall-to-android/releases/download/v1.0.0/update-magnolia_p_rel_190830r2854-3698-user.zip)** (Size: ~758 MB / build `3698`)
+   * ⚙️ **[`xiaomi_update-magnolia`](https://github.com/akshit14243/mi-tv-patchwall-to-android/releases/download/v1.0.0/xiaomi_update-magnolia)** (Size: 1 KB / recovery trigger script)
+3. **Mi TV Remote** (with working batteries).
 
 ---
 
@@ -98,7 +96,7 @@ Because old PatchWall lacks the official Google Play Store, verify your board be
 ---
 
 ### Step 2: Copy Files to USB Root
-Place **EXACTLY these 2 files** directly in the **root (main directory)** of your USB drive:
+Download both files from the **[Releases Section](https://github.com/akshit14243/mi-tv-patchwall-to-android/releases/tag/v1.0.0)** and place **EXACTLY these 2 files** directly in the **root (main directory)** of your USB drive:
 
 ```text
 [USB Drive E:\]
@@ -106,7 +104,7 @@ Place **EXACTLY these 2 files** directly in the **root (main directory)** of you
   └── xiaomi_update-magnolia
 ```
 
-*(You can copy `xiaomi_update-magnolia` directly from this repo).*
+*(No file renaming, no manual editing, and no unzipping required—simply download both files from the release and drag them to the root of your USB drive).*
 
 <p align="center">
   <img src="assets/usb_drive_files.jpg" alt="USB Drive Root Directory with exactly the 2 files" width="700"/>
@@ -182,8 +180,7 @@ While keeping both buttons firmly pressed, plug the power cable back into the wa
 │   ├── generate_update_command.ps1 # Automated PowerShell recovery file generator
 │   └── generate_update_command.sh  # Automated Bash recovery file generator
 ├── templates/
-│   └── xiaomi_update-magnolia      # Pre-configured trigger file for magnolia 3698
-├── xiaomi_update-magnolia          # Ready-to-use trigger file
+│   └── xiaomi_update-magnolia      # Reference trigger template
 ├── .gitignore
 ├── LICENSE
 └── README.md
