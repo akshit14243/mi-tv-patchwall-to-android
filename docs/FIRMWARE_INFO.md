@@ -47,8 +47,7 @@ pre-device=magnolia
 
 ## Why the Recovery Trigger is Required
 Stock Xiaomi recovery on the `magnolia` platform runs in a locked batch execution mode when triggered via hardware button combinations. Instead of launching an interactive UI file explorer, the recovery daemon checks the root of `/udisk` (the mounted USB flash drive) for:
-1. `xiaomi_update-magnolia`
-2. `xiaomi_update`
+* **`xiaomi_update-magnolia`**
 
 The recovery daemon passes the arguments inside this file to `update_package` automatically:
 ```text

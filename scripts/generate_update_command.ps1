@@ -34,8 +34,7 @@ if ($WipeData) {
 }
 
 $filesToCreate = @(
-    "xiaomi_update-magnolia",
-    "xiaomi_update"
+    "xiaomi_update-magnolia"
 )
 
 Write-Host "==========================================================" -ForegroundColor Cyan

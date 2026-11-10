@@ -23,9 +23,7 @@ if [ "${WIPE_DATA}" = "true" ] || [ "${WIPE_DATA}" = "wipe" ]; then
 fi
 
 printf "%b\n" "${COMMAND}" > "${TARGET_DIR}/xiaomi_update-magnolia"
-printf "%b\n" "${COMMAND}" > "${TARGET_DIR}/xiaomi_update"
 
 echo "[+] Created: ${TARGET_DIR}/xiaomi_update-magnolia"
-echo "[+] Created: ${TARGET_DIR}/xiaomi_update"
 echo ""
 echo "Done! Copy your firmware zip and these files to the root of your FAT32 USB drive."

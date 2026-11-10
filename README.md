@@ -38,14 +38,14 @@ Many users find YouTube tutorials or technician spreadsheets promising the Patch
 
 ### What is this file?
 Stock Xiaomi TV recovery does not offer an interactive user file explorer. When you boot the TV into recovery mode via remote keys, the recovery daemon scans the root directory of your USB drive (`/udisk`) for an automated batch instruction file:
-* **File Name:** `xiaomi_update-magnolia` (or generic fallback `xiaomi_update`)
+* **File Name:** `xiaomi_update-magnolia`
 * **File Type:** Plain text with **NO file extension** (not `.txt`, not `.bin`)
 * **Payload:** Instructs the recovery kernel to locate and flash the firmware archive:
   ```text
   --update_package=/udisk/update-magnolia_p_rel_190830r2854-3698-user.zip
   ```
 
-This repository includes pre-built template files as well as automated PowerShell/Bash scripts to generate them in seconds.
+This repository includes the pre-built template file as well as automated PowerShell/Bash scripts to generate it in seconds.
 
 ---
 
@@ -54,10 +54,10 @@ This repository includes pre-built template files as well as automated PowerShel
 1. **USB Flash Drive:**
    * Capacity: 8 GB or 16 GB recommended (must be FAT32 formatted, MBR partition).
 2. **Firmware Package:**
+   * Download directly from [GitHub Releases: v1.0.0](https://github.com/akshit14243/mi-tv-patchwall-to-android/releases/tag/v1.0.0)
    * File: `update-magnolia_p_rel_190830r2854-3698-user.zip` (Size: ~758 MB / build `3698`).
-3. **Recovery Trigger Files (Included in this repo):**
+3. **Recovery Trigger File (Included in this repo):**
    * `xiaomi_update-magnolia`
-   * `xiaomi_update` (fallback)
 4. **Mi TV Remote** (with working batteries).
 
 ---
@@ -98,16 +98,19 @@ Because old PatchWall lacks the official Google Play Store, verify your board be
 ---
 
 ### Step 2: Copy Files to USB Root
-Place the following files directly in the **root (main directory)** of your USB drive:
+Place **EXACTLY these 2 files** directly in the **root (main directory)** of your USB drive:
 
 ```text
 [USB Drive E:\]
   ├── update-magnolia_p_rel_190830r2854-3698-user.zip
-  ├── xiaomi_update-magnolia
-  └── xiaomi_update
+  └── xiaomi_update-magnolia
 ```
 
-*(You can copy `xiaomi_update-magnolia` and `xiaomi_update` directly from the `templates/` folder in this repo).*
+*(You can copy `xiaomi_update-magnolia` directly from this repo).*
+
+<p align="center">
+  <img src="assets/usb_drive_files.jpg" alt="USB Drive Root Directory with exactly the 2 files" width="700"/>
+</p>
 
 #### Or Generate Automatically:
 If your firmware `.zip` has a different name, use the included helper script:
@@ -168,18 +171,19 @@ While keeping both buttons firmly pressed, plug the power cable back into the wa
 ```text
 ├── assets/
 │   ├── aida64_hardware_check.jpg   # AIDA64 board verification (magnolia vs dangal)
-│   ├── back_panel_model_label.jpg   # Rear rating label (Model L32M5-AI & SN 16938)
-│   ├── remote_recovery_combo.jpg    # Visual guide for remote button combo
-│   └── tv_power_recovery.jpg        # Visual guide for power trigger
+│   ├── back_panel_model_label.jpg  # Rear rating label (Model L32M5-AI & SN 16938)
+│   ├── remote_recovery_combo.jpg   # Visual guide for remote button combo
+│   ├── tv_power_recovery.jpg       # Visual guide for power trigger
+│   └── usb_drive_files.jpg         # Screenshot of FAT32 USB drive with the 2 files
 ├── docs/
-│   ├── FIRMWARE_INFO.md             # Technical metadata, build keys, device tree
-│   └── TROUBLESHOOTING.md           # Fixes for bootloop, signature check, USB errors
+│   ├── FIRMWARE_INFO.md            # Technical metadata, build keys, device tree
+│   └── TROUBLESHOOTING.md          # Fixes for bootloop, signature check, USB errors
 ├── scripts/
-│   ├── generate_update_command.ps1  # Automated PowerShell recovery file generator
-│   └── generate_update_command.sh   # Automated Bash recovery file generator
+│   ├── generate_update_command.ps1 # Automated PowerShell recovery file generator
+│   └── generate_update_command.sh  # Automated Bash recovery file generator
 ├── templates/
-│   ├── xiaomi_update-magnolia       # Pre-configured trigger file for magnolia 3698
-│   └── xiaomi_update                # Universal fallback trigger file
+│   └── xiaomi_update-magnolia      # Pre-configured trigger file for magnolia 3698
+├── xiaomi_update-magnolia          # Ready-to-use trigger file
 ├── .gitignore
 ├── LICENSE
 └── README.md
